@@ -7,7 +7,6 @@
 //
 
 import UIKit
-//import AVFoundation
 
 class ViewController: UIViewController {
   
@@ -23,6 +22,7 @@ class ViewController: UIViewController {
   var voiceList = VoiceLanguageList()
   let voice     = Voice()
   var speaker   = String()
+  var textViewClearedOnInitialEdit = false
   
   //MARK: -
   override func viewDidLoad() {
@@ -30,7 +30,6 @@ class ViewController: UIViewController {
     
     // delegate for textView
     textPhrase.delegate = self
-   // textRate.delegate = self as? UITextFieldDelegate
     
     // UI appearance
     updateUI()
@@ -57,8 +56,8 @@ class ViewController: UIViewController {
     textRate.setRadius(radius: 10.0)
     buttonSpeaker.roundButton(radius: 15.0)
   }
+    
 
-  
   //MARK: Speak button
   //If pressed, will stop any speech currently being played.
   @IBAction func sayText(_ sender: Any) {
@@ -75,37 +74,23 @@ class ViewController: UIViewController {
     voice.say(speaker: speaker, phrase: phrase, rate: rate, pitch: pitch)
   }
   
-  //MARK: -
-  // TextView functions
-  var textViewClearedOnInitialEdit = false
-  
-  func textViewDidBeginEditing(_ textView: UITextView) {
-   // textPhrase.text = ""
-    buttonClear.isHidden = false
-  }
-  
   @IBAction func clearPhrase(_ sender: Any) {
     textPhrase.text = String()
   }
-  
-//  @IBAction func dismissKeyboard(_ sender: Any) {
-//    self.view.endEditing(true)
-//    buttonClear.isHidden = true
-//  }
-
   
   // Assist with keyboard dismiss
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     self.view.endEditing(true)
     buttonClear.isHidden = true
   }
-  
-
 } //end of ViewController
+
 
 //MARK: -  UITextViewDelegate
 extension ViewController: UITextViewDelegate {
-    
+      func textViewDidBeginEditing(_ textView: UITextView) {
+        buttonClear.isHidden = false
+      }
 }
 
 

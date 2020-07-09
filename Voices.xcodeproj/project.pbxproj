@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93062A7624B6D82500EBC3A9 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 93062A7524B6D82500EBC3A9 /* LICENSE */; };
+		93062A7824B6D82C00EBC3A9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 93062A7724B6D82C00EBC3A9 /* README.md */; };
+		93062A7B24B6E23E00EBC3A9 /* Voices.gif in Resources */ = {isa = PBXBuildFile; fileRef = 93062A7A24B6E23E00EBC3A9 /* Voices.gif */; };
 		9318748924B6BC9100EA8EC4 /* Ext-UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318748824B6BC9100EA8EC4 /* Ext-UITextView.swift */; };
 		9318748B24B6BCC800EA8EC4 /* Ext-UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318748A24B6BCC800EA8EC4 /* Ext-UITextField.swift */; };
 		9318748D24B6BD1700EA8EC4 /* Ext-UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318748C24B6BD1700EA8EC4 /* Ext-UIButton.swift */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		93062A7524B6D82500EBC3A9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		93062A7724B6D82C00EBC3A9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		93062A7A24B6E23E00EBC3A9 /* Voices.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Voices.gif; sourceTree = "<group>"; };
 		9318748824B6BC9100EA8EC4 /* Ext-UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext-UITextView.swift"; sourceTree = "<group>"; };
 		9318748A24B6BCC800EA8EC4 /* Ext-UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext-UITextField.swift"; sourceTree = "<group>"; };
 		9318748C24B6BD1700EA8EC4 /* Ext-UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext-UIButton.swift"; sourceTree = "<group>"; };
@@ -47,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93062A7924B6D8DB00EBC3A9 /* GitHub-Images */ = {
+			isa = PBXGroup;
+			children = (
+				93062A7A24B6E23E00EBC3A9 /* Voices.gif */,
+			);
+			path = "GitHub-Images";
+			sourceTree = "<group>";
+		};
 		9318748224B6BA9500EA8EC4 /* Root */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +118,9 @@
 		93D8497720B1B41A000C3F95 = {
 			isa = PBXGroup;
 			children = (
+				93062A7924B6D8DB00EBC3A9 /* GitHub-Images */,
+				93062A7524B6D82500EBC3A9 /* LICENSE */,
+				93062A7724B6D82C00EBC3A9 /* README.md */,
 				93D8498220B1B41A000C3F95 /* Voices */,
 				93D8498120B1B41A000C3F95 /* Products */,
 			);
@@ -191,6 +208,9 @@
 			files = (
 				93D8498E20B1B420000C3F95 /* LaunchScreen.storyboard in Resources */,
 				93D8498B20B1B420000C3F95 /* Assets.xcassets in Resources */,
+				93062A7824B6D82C00EBC3A9 /* README.md in Resources */,
+				93062A7B24B6E23E00EBC3A9 /* Voices.gif in Resources */,
+				93062A7624B6D82500EBC3A9 /* LICENSE in Resources */,
 				93D8498920B1B41B000C3F95 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

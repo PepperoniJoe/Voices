@@ -12,8 +12,13 @@ An iOS app that reads any typed text. Select the voice, pitch and rate.
 Xcode11  project written in Swift 5 for iOS\
 AVFoundation, Voice Synthesizer, UIPickerView, UITextView, Popup Keyboard
 
+**See Also:** \
+[Quickies - a variety of example iOS apps](https://github.com/PepperoniJoe/Quickies)\
+ [Make Icons Swiftly - used to generate app icon sets
+ ](https://github.com/PepperoniJoe/Make-Icons-Swiftly)
+
 **Author:** \
 Marcy Vernon [@MarcyVernon](https://twitter.com/MarcyVernon)
 
 **License:** \
-"Voice" is under the MIT license. See [LICENSE](/LICENSE) for more information.
+"Voices" is under the MIT license. See [LICENSE](/LICENSE) for more information.
